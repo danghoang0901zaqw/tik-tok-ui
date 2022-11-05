@@ -1,0 +1,77 @@
+@import 'normalize.css';
+:root {
+    --primary: #fe2c55;
+    --black: #000;
+    --white: #fff;
+    --text-color: #161823;
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    text-rendering: optimizeSpeed;
+}
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+a[href] {
+    text-decoration: none;
+    color: var(--text-color);
+}
+//Font emmbeded
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Semibold.woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+    font-weight: 600;
+}
+// @font-face {
+//     font-family: ProximaNova;
+//     src: url('/assets/fonts/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC0O4a0Ew.woff2');
+//     font-weight: 700;
+// }
+
+//Custom tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+        background: #545454eb;
+    }
+    .tippy-arrow{
+      color: #545454eb;
+    }
+    .tippy-content {
+        padding: 8px 9px;
+    }
+    .tippy-box[data-placement^=bottom]>.tippy-arrow:before {
+      top: -8px;
+    }
+}
